@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 
 const mockUserData=[
-    {name = 'Mark'},
-    {name = 'Jill'},
-    {name = 'Ilham'}
+    {name : 'Mark'},
+    {name : 'Jill'},
+    {name : 'Ilham'}
 ]
 
 app.get('/users', function(req, res){
