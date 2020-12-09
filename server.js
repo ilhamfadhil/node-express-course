@@ -18,6 +18,15 @@ app.get('/users', function(req, res){
     })
 })
 
+
+app.get('/tests', function(req, res){
+    res.json({
+        success: true,
+        message: 'Ini API GET percobaan',
+        users: mockUserData
+    })
+})
+
 app.get('/users/:id', function(req, res){
     console.log(req.params.id)
     res.json({
